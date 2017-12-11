@@ -1,6 +1,6 @@
 {
-    "name": "AmazeeLabs/d8-starter-composer",
-    "description": "A Drupal 8 starter project built with Composer",
+    "name": "AmazeeLabs/sportfishcenter_com",
+    "description": "Sportfish Center",
     "type": "project",
     "repositories": [
         {

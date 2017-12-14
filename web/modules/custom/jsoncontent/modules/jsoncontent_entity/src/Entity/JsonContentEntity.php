@@ -10,7 +10,8 @@ use Drupal\jsoncontent_entity\JsonContentEntityInterface;
 /**
  * @ContentEntityType(
  *   id = "jsoncontent_entity",
- *   label = @Translation("JSONConten Entity"),
+ *   label = @Translation("JSONContent Entity"),
+ *   bundle_label = @Translation("JSONContent Entity type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\jsoncontent_entity\Entity\Controller\JsonContentListBuilder",
@@ -25,15 +26,17 @@ use Drupal\jsoncontent_entity\JsonContentEntityInterface;
  *   admin_permission = "administer jsoncontent entity",
  *   fieldable = TRUE,
  *   entity_keys = {
- *     "id" = "id"
+ *     "id" = "id",
+ *     "bundle" = "type",
  *   },
+ *   bundle_entity_type = "jsoncontent_entity_type",
  *   links = {
  *     "canonical" = "/jsoncontent_entity/{jsoncontent_entity}",
  *     "edit-form" = "/jsoncontent_entity/{jsoncontent_entity}/edit",
  *     "delete-form" = "/jsoncontent_entity/{jsoncontent_entity}/delete",
  *     "collection" = "/jsoncontent_entity/list"
   *   },
- *   field_ui_base_route = "jsoncontent_entity.settings",
+ *   field_ui_base_route = "entity.jsoncontent_entity_type.edit_form",
  * )
  */
 class JsonContentEntity extends ContentEntityBase implements JsonContentEntityInterface {
@@ -46,25 +49,11 @@ class JsonContentEntity extends ContentEntityBase implements JsonContentEntityIn
       ->setDescription(t('The ID of the JSON Content entity.'))
       ->setReadOnly(TRUE);
 
-    $fields['name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Name'))
-      ->setDescription(t('The name of the JSON Content entity.'))
-      ->setSettings(array(
-        'default_value' => '',
-        'max_length' => 255,
-        'text_processing' => 0,
-      ))
-      ->setDisplayOptions('view', array(
-        'label' => 'above',
-        'type' => 'string',
-        'weight' => -6,
-      ))
-      ->setDisplayOptions('form', array(
-        'type' => 'string_textfield',
-        'weight' => -6,
-      ))
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
+    $fields['type'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Type'))
+      ->setDescription(t('The jsoncontent entity type.'))
+      ->setSetting('target_type', 'jsoncontent_entity_type')
+      ->setReadOnly(TRUE);
     return $fields;
   }
 }

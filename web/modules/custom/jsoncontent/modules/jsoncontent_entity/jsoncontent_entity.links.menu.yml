@@ -1,11 +1,5 @@
-entity.jsoncontent_entity.collection:
-  title: 'JSONContent entity: Listing'
-  route_name: entity.jsoncontent_entity.collection
-  description: 'List JSONContent entities'
-  weight: 10
-
-jsoncontent_entity.admin.structure.settings:
-  title: JSON Content Settings
-  description: 'Configure JSON Content entity'
-  route_name:  jsoncontent_entity.settings
+entity.jsoncontent_entity_type.collection:
+  title: JSON Content Entity Type
   parent: system.admin_structure
+  description: 'Manage the JSON Content Entity types.'
+  route_name: entity.jsoncontent_entity_type.collection

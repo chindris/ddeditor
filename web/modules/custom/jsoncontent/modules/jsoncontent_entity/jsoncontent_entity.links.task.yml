@@ -1,8 +1,3 @@
-jsoncontent_entity.settings_tab:
-  route_name: jsoncontent_entity.settings
-  title: Settings
-  base_route: jsoncontent_entity.settings
-
 jsoncontent_entity.view:
   route_name: entity.jsoncontent_entity.canonical
   base_route: entity.jsoncontent_entity.canonical

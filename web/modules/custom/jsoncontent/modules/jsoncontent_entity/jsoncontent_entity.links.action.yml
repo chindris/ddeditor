@@ -1,7 +1,13 @@
-jsoncontent_entity._add:
+jsoncontent_entity.add:
   route_name: jsoncontent_entity.add
   title: 'Add JSONContent'
 
   appears_on:
     - entity.jsoncontent_entity.collection
     - entity.jsoncontent_entity.canonical
+
+jsoncontent_entity.type_add:
+  route_name: 'jsoncontent_entity.type_add'
+  title: 'Add JSON Content Entity type'
+  appears_on:
+    - entity.jsoncontent_entity_type.collection

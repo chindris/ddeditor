@@ -1,0 +1,20 @@
+jsoncontent_entity.settings_tab:
+  route_name: jsoncontent_entity.settings
+  title: Settings
+  base_route: jsoncontent_entity.settings
+
+jsoncontent_entity.view:
+  route_name: entity.jsoncontent_entity.canonical
+  base_route: entity.jsoncontent_entity.canonical
+  title: View
+
+jsoncontent_entity.edit:
+  route_name: entity.jsoncontent_entity.edit_form
+  base_route: entity.jsoncontent_entity.canonical
+  title: Edit
+
+jsoncontent_entity.delete_confirm:
+  route_name:  entity.jsoncontent_entity.delete_form
+  base_route:  entity.jsoncontent_entity.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,47 @@
+entity.jsoncontent_entity.canonical:
+  path: '/jsoncontent_entity/{jsoncontent_entity}'
+  defaults:
+    _entity_view: 'jsoncontent_entity'
+    _title: 'JSONContent Content'
+  requirements:
+    _entity_access: 'jsoncontent_entity.view'
+
+entity.jsoncontent_entity.collection:
+  path: '/jsoncontent_entity/list'
+  defaults:
+    _entity_list: 'jsoncontent_entity'
+    _title: 'JSONContent List'
+  requirements:
+    _permission: 'administer jsoncontent_entity entity'
+
+jsoncontent_entity.add:
+  path: '/jsoncontent_entity/add'
+  defaults:
+    _entity_form: jsoncontent_entity.add
+    _title: 'Add JSONContent'
+  requirements:
+    _entity_create_access: 'jsoncontent_entity'
+
+entity.jsoncontent_entity.edit_form:
+  path: '/jsoncontent_entity/{jsoncontent_entity}/edit'
+  defaults:
+    _entity_form: jsoncontent_entity.edit
+    _title: 'Edit JSONContent'
+  requirements:
+    _entity_access: 'jsoncontent_entity.edit'
+
+entity.jsoncontent_entity.delete_form:
+  path: '/jsoncontent_entity/{jsoncontent_entity}/delete'
+  defaults:
+    _entity_form: jsoncontent_entity.delete
+    _title: 'Delete JSONContent'
+  requirements:
+    _entity_access: 'jsoncontent_entity.delete'
+
+jsoncontent_entity.settings:
+  path: 'admin/structure/jsoncontent_entity_settings'
+  defaults:
+    _form: '\Drupal\jsoncontent_entity\Form\JsonContentEntitySettingsForm'
+    _title: 'JSON Content Settings'
+  requirements:
+    _permission: 'administer jsoncontent_entity entity'

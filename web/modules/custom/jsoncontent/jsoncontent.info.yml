@@ -1,0 +1,5 @@
+name: JSONContent
+type: module
+description: 'Provides a field type which stores content encoded as json.'
+package: Custom
+core: 8.x

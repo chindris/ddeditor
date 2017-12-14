@@ -1,0 +1,11 @@
+view jsoncontent entity:
+  title: 'View JSONContent entity'
+add jsoncontent entity:
+  title: 'Add JSONContent entity'
+edit jsoncontent entity:
+  title: 'Edit JSONContent Entity'
+delete jsoncontent entity:
+  title: 'Delete JSONContent entity'
+administer jsoncontent entity:
+  title: 'Administer JSONContent entity'
+  restrict access: TRUE

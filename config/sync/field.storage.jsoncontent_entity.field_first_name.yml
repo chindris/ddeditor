@@ -1,11 +1,11 @@
-uuid: 2be14248-51e1-4fd4-b7e8-95d860cf80ce
+uuid: 19bfa873-ce9d-4252-8b8c-52e108831c10
 langcode: en
 status: true
 dependencies:
   module:
     - jsoncontent_entity
-id: jsoncontent_entity.field_options
-field_name: field_options
+id: jsoncontent_entity.field_first_name
+field_name: field_first_name
 entity_type: jsoncontent_entity
 type: string
 settings:

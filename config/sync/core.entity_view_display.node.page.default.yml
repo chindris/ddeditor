@@ -1,4 +1,4 @@
-uuid: 082783c7-3c72-4c39-a800-e68e8d159dac
+uuid: 56d0e87b-e897-428f-93a8-5ac978a22a59
 langcode: en
 status: true
 dependencies:
@@ -14,14 +14,14 @@ bundle: page
 mode: default
 content:
   field_main_content:
-    weight: 102
+    type: jsoncontent_entity_formatter
+    weight: 1
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: jsoncontent_entity_formatter
-    region: content
   links:
-    weight: 101
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

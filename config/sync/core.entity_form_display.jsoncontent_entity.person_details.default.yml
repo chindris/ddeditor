@@ -1,0 +1,30 @@
+uuid: e360f0c4-bb09-42e5-a42a-7ec4f9c0d855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.jsoncontent_entity.person_details.field_first_name
+    - field.field.jsoncontent_entity.person_details.field_last
+    - jsoncontent_entity.jsoncontent_entity_type.person_details
+id: jsoncontent_entity.person_details.default
+targetEntityType: jsoncontent_entity
+bundle: person_details
+mode: default
+content:
+  field_first_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

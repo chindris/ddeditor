@@ -1,0 +1,6 @@
+uuid: fe59810b-9193-47f3-b657-5b8508731615
+langcode: en
+status: true
+dependencies: {  }
+id: person_details
+label: 'Person details'

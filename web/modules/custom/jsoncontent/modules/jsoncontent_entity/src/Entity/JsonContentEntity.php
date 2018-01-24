@@ -13,6 +13,8 @@ use Drupal\jsoncontent_entity\JsonContentEntityInterface;
  *   label = @Translation("JSONContent Entity"),
  *   bundle_label = @Translation("JSONContent Entity type"),
  *   handlers = {
+ *     "storage" = "Drupal\jsoncontent_entity\JsonContentEntityStorage",
+ *     "storage_schema" = "Drupal\jsoncontent_entity\JsonContentEntityStorageSchema",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\jsoncontent_entity\Entity\Controller\JsonContentListBuilder",
  *     "form" = {
@@ -22,7 +24,6 @@ use Drupal\jsoncontent_entity\JsonContentEntityInterface;
  *     },
  *     "access" = "Drupal\jsoncontent_entity\JsonContentEntityAccessControlHandler",
  *   },
- *   base_table = "jsoncontent_entity",
  *   admin_permission = "administer jsoncontent entity",
  *   fieldable = TRUE,
  *   entity_keys = {

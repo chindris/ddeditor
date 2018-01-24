@@ -3,3 +3,5 @@ type: module
 description: 'Provides the json content entity type.'
 package: Custom
 core: 8.x
+dependencies:
+  - jsoncontent

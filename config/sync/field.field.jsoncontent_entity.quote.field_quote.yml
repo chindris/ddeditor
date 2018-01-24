@@ -1,0 +1,19 @@
+uuid: 236d1b40-a8b4-43b3-896e-830ed852408f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.jsoncontent_entity.field_quote
+    - jsoncontent_entity.jsoncontent_entity_type.quote
+id: jsoncontent_entity.quote.field_quote
+field_name: field_quote
+entity_type: jsoncontent_entity
+bundle: quote
+label: Quote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

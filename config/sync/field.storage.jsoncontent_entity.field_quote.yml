@@ -1,0 +1,19 @@
+uuid: b8757afa-7957-4538-b1e2-17eed899e8fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - jsoncontent_entity
+id: jsoncontent_entity.field_quote
+field_name: field_quote
+entity_type: jsoncontent_entity
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

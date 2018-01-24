@@ -1,0 +1,30 @@
+uuid: 05f6fb2b-e4f0-464b-860e-4eecd2f9309e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.jsoncontent_entity.quote.field_author
+    - field.field.jsoncontent_entity.quote.field_quote
+    - jsoncontent_entity.jsoncontent_entity_type.quote
+id: jsoncontent_entity.quote.default
+targetEntityType: jsoncontent_entity
+bundle: quote
+mode: default
+content:
+  field_author:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_quote:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden: {  }

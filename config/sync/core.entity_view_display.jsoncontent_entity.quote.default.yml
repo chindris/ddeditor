@@ -1,0 +1,29 @@
+uuid: d870a265-3a90-4dcd-ac41-1c637863b247
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.jsoncontent_entity.quote.field_author
+    - field.field.jsoncontent_entity.quote.field_quote
+    - jsoncontent_entity.jsoncontent_entity_type.quote
+id: jsoncontent_entity.quote.default
+targetEntityType: jsoncontent_entity
+bundle: quote
+mode: default
+content:
+  field_author:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_quote:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

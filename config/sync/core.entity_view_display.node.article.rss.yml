@@ -17,7 +17,9 @@ mode: rss
 content:
   links:
     weight: 100
+    region: content
 hidden:
   body: true
   field_image: true
   field_tags: true
+  langcode: true

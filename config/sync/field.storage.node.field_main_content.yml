@@ -1,0 +1,19 @@
+uuid: 2a9571ca-53cf-495b-bd72-567dd1687d33
+langcode: en
+status: true
+dependencies:
+  module:
+    - jsoncontent
+    - node
+id: node.field_main_content
+field_name: field_main_content
+entity_type: node
+type: jsoncontent
+settings: {  }
+module: jsoncontent
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

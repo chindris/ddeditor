@@ -1,0 +1,30 @@
+uuid: 8728777e-7faf-4020-9d22-aa0c95eb862a
+langcode: en
+status: true
+dependencies:
+  module:
+    - jsoncontent_entity
+    - options
+id: jsoncontent_entity.field_color
+field_name: field_color
+entity_type: jsoncontent_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: red
+      label: Red
+    -
+      value: blue
+      label: Blue
+    -
+      value: green
+      label: Green
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

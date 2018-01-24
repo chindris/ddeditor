@@ -19,9 +19,11 @@ class JsonContentFormatter extends JsonContentFormatterBase {
   public function viewFieldElements(FieldItemListInterface $items, $langcode) {
     $element = [];
     foreach ($items as $delta => $item) {
-      $render_controller = \Drupal::entityTypeManager()->getViewBuilder($item->value['entityType']);
-      $entity = \Drupal::entityTypeManager()->getStorage($item->value['entityType'])->create($item->value);
-      $element[$delta] = $render_controller->view($entity, 'full', $langcode);
+      foreach ($item->value as $entity_meta) {
+        $render_controller = \Drupal::entityTypeManager()->getViewBuilder($entity_meta['entityType']);
+        $entity = \Drupal::entityTypeManager()->getStorage($entity_meta['entityType'])->create($entity_meta);
+        $element[$delta][] = $render_controller->view($entity, 'full', $langcode);
+      }
     }
 
     return $element;

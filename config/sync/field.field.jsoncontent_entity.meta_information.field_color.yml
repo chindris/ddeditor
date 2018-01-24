@@ -1,0 +1,21 @@
+uuid: d060e1f8-ff67-4c94-830c-243bd196891b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.jsoncontent_entity.field_color
+    - jsoncontent_entity.jsoncontent_entity_type.meta_information
+  module:
+    - options
+id: jsoncontent_entity.meta_information.field_color
+field_name: field_color
+entity_type: jsoncontent_entity
+bundle: meta_information
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

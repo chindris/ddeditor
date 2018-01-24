@@ -1,0 +1,19 @@
+uuid: e14dbed4-b30d-4e1c-842e-cdcb96c4e519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.jsoncontent_entity.field_author
+    - jsoncontent_entity.jsoncontent_entity_type.quote
+id: jsoncontent_entity.quote.field_author
+field_name: field_author
+entity_type: jsoncontent_entity
+bundle: quote
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

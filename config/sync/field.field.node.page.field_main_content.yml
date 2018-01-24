@@ -1,0 +1,21 @@
+uuid: 3118c2d8-6ab4-4dca-8ee3-1f4c471f49b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_content
+    - node.type.page
+  module:
+    - jsoncontent
+id: node.page.field_main_content
+field_name: field_main_content
+entity_type: node
+bundle: page
+label: 'Main content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: jsoncontent

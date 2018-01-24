@@ -1,0 +1,36 @@
+uuid: ebc35b0d-9f5c-4531-aaef-84ee559b3e3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.jsoncontent_entity.meta_information.field_color
+    - field.field.jsoncontent_entity.meta_information.field_options
+    - jsoncontent_entity.jsoncontent_entity_type.meta_information
+id: jsoncontent_entity.meta_information.default
+targetEntityType: jsoncontent_entity
+bundle: meta_information
+mode: default
+content:
+  field_color:
+    weight: -4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_options:
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: -6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

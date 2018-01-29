@@ -13,8 +13,7 @@ use Drupal\jsoncontent_entity\JsonContentEntityInterface;
  *   label = @Translation("JSONContent Entity"),
  *   bundle_label = @Translation("JSONContent Entity type"),
  *   handlers = {
- *     "storage" = "Drupal\jsoncontent_entity\JsonContentEntityStorage",
- *     "storage_schema" = "Drupal\jsoncontent_entity\JsonContentEntityStorageSchema",
+ *     "storage" = "Drupal\Core\Entity\ContentEntityNullStorage",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\jsoncontent_entity\Entity\Controller\JsonContentListBuilder",
  *     "form" = {
